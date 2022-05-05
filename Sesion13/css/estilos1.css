@@ -1,0 +1,17 @@
+/*
+Ejemplo1
+body{
+    color: blue;
+}
+*/
+
+body{
+    font-family: arial;
+    color: black;
+}
+h1{
+    font-family: verdana;
+}
+p{
+    color: red;
+}
