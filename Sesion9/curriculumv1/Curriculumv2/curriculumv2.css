@@ -1,30 +1,73 @@
-
 header{
-    background-color: greenyellow;
+    background-color: antiquewhite;
     color: red;
     font-size: 20px;
     font-family: 'Times New Roman';
-    padding: 20px;
+    padding: 05px;
 }
 
 body{
-    margin: 0;
+    margin: 10;
+    background-color: ghostwhite;
+    font-family: 'Lucida Sans';
+    font-size: 14px;
+}
+
+img{
+    background-color: antiquewhite;
 }
 
 div p, a {
     color: white;
     background-color: black;
-    font-size: 17px;
+    font-size: 18px;
     margin: 0;
+    font-family: serif;
 }
 
 div h1{
-    background-color: greenyellow;
+    background-color: antiquewhite;
     color: cadetblue;
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
+    margin: 0;
 }
 
+h2{
+    color: lightslategray;
+    background-color: antiquewhite;
+    font-family: serif;
+    font-size: 20px;
+}
 
+li {
+    list-style-type: circle;
+}
 
+strong{
+    color: tomato;
+}
+
+th{
+    color: tomato;
+}
+
+p{
+    text-align: justify;
+}
+
+dt{
+    color: tomato;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    margin: 0;
+}
+
+.containerimagen{
+    background-color: antiquewhite;
+}
 
