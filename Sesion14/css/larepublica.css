@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman';
+    background-color: red;
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    padding: 10px;
+}
+
+div a{
+    text-decoration: none;
+    font-family: arial;
+    font-size: 12px;
+    color: white;
+    margin-left: 40px;
+}
+
+#enlaces{
+    background-color: gray;
+    margin: 0px;
+}
+
+h3{
+    font-family: arial;
+    color: red;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-family: arial;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+#imagen{
+    width: 450px;
+    height:250px;
+    float: right;
+}
+
+#texto1{
+    margin-bottom: 0px;
+    background-color: white;
+    text-align: justify;
+    font-family: Arial;
+}
+
+#texto2{
+    background-color: red;
+    width: 200px;
+    float: right;
+    margin: 0px;
+    color: white;
+    font-family: arila;
+}
