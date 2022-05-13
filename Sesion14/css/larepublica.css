@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin: 0px;
 }
 
 h1{
@@ -33,22 +33,29 @@ h3{
 }
 
 h2{
-    font-family: arial;
-    font-size: 20px;
+    font-family: Cambria;
     margin-top: 0px;
+    font-size: 22px;
 }
 
 #imagen{
     width: 450px;
     height:250px;
     float: right;
+    margin: 10px;
+    margin-right: 0px;
+}
+
+#logo{
+    height: 25px;
 }
 
 #texto1{
     margin-bottom: 0px;
     background-color: white;
     text-align: justify;
-    font-family: Arial;
+    font-family: Verdana;
+    font-size: 15px;
 }
 
 #texto2{
@@ -57,5 +64,6 @@ h2{
     float: right;
     margin: 0px;
     color: white;
-    font-family: arila;
+    font-family: Arial;
+    text-align: center;
 }
