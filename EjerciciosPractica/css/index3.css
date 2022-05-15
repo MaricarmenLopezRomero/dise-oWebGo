@@ -48,7 +48,7 @@ footer{
 }
 
 footer a{
-    margin-left: 80px;
+    margin-left: 105px;
 }
 
 #texto{
@@ -76,8 +76,9 @@ div h3{
 }
 
 #form2{
-    padding-left: 50px;
-    padding-top: 15px;
+    position: relative;
+    left: 90px;
+    top: 20px;
 }
 
 #titulo{
@@ -151,10 +152,35 @@ div h3{
 }
 
 #boton1{
-    margin-left: -200px;
-    margin-right: -250px;
+    position: relative;
+    left: -400px;
 }
 
 #boton2{
-    margin-left: 500px;
+    position: relative;
+    left: -206px;
+}
+
+#boton3{
+    position: relative;
+    left: -500px;
+    top: 40px;
+}
+
+#boton4{
+    position: relative;
+    left: -300px;
+    top: 40px;
+}
+
+#boton5{
+    position: relative;
+    left: -90px;
+    top: 40px;
+}
+
+#foot a{
+    text-decoration: none;
+    margin-left: 147px;
+    color: cadetblue;
 }

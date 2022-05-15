@@ -48,7 +48,7 @@ footer{
 }
 
 footer a{
-    margin-left: 80px;
+    margin-left: 105px;
 }
 
 #texto{
@@ -76,8 +76,9 @@ div h3{
 }
 
 #form2{
-    padding-left: 50px;
-    padding-top: 15px;
+    position: relative;
+    left: 90px;
+    top: 20px;
 }
 
 #titulo{
@@ -130,4 +131,10 @@ th{
 #table2{
     padding-left: 30px;
     padding-bottom: 10px;
+}
+
+#foot a{
+    text-decoration: none;
+    margin-left: 147px;
+    color: cadetblue;
 }
