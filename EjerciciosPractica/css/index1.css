@@ -1,0 +1,153 @@
+body{
+    margin: 0px auto;
+}
+
+header{
+    padding-bottom: 80px;
+    font-family: 'Times New Roman';
+    background-color: antiquewhite;
+    grid-area: my-header;
+}
+
+nav{
+    background-color: azure;
+    flex: 30%;
+    grid-area: my-nav;
+}
+
+nav a{
+    text-decoration: none;
+    margin-left: 200px;
+    color: darkgrey;
+}
+
+#contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    flex: 70%;
+    background-color: gainsboro;
+    grid-area: my-section;
+}
+
+aside{
+    background-color: bisque;
+    text-align: center;
+    grid-area: my-aside;
+}
+
+#menu{
+    background-color: aliceblue;
+}
+
+#enlace{
+    background-color: aliceblue;
+}
+
+footer{
+    background-color: beige;
+    grid-area: my-footer;
+}
+
+footer a{
+    margin-left: 105px;
+}
+
+#texto{
+    margin-left: 180px;
+    margin-top: -120px;
+}
+
+div h1{
+    color: darkred;
+}
+div h2{
+    color: chocolate;
+}
+
+div h3{
+    margin-top: -120px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#form{
+    height: 100px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+#form2{
+    position: relative;
+    left: 90px;
+    top: 20px;
+}
+
+#titulo{
+    color: darkseagreen;
+    font-size: 20px;
+    text-align: center;
+}
+
+#subitulo{
+    text-align: left;
+}
+
+#parrafo1, #parrafo2{
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#img1, #img4{
+    float: left;
+    width: 300px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+#img2{
+    font-size: 19px;
+    padding-left: 150px;
+}
+
+#img3{
+    font-size: 19px;
+    padding-top: 80px;
+    padding-left: 150px;
+}
+
+#foot a{
+    text-decoration: none;
+    margin-left: 147px;
+    color: cadetblue;
+}
+
+@media (min-width:320px){
+    .grid{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px 150px 1fr 100px;
+        grid-template-areas: "my-header"
+        "my-aside" "my-section" "my-footer";
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px){
+    .grid{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas: "my-header my-header"
+        "my-aside my-aside" "my-section" "my-footer my-footer";
+    }
+}
+
+@media(min-width:1001px){
+    .grid{
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: "my-header my-header"
+        "my-aside my-section" "my-footer my-footer";
+    }
+}
