@@ -9,25 +9,34 @@ header{
     grid-area: my-header;
 }
 
-nav{
-    flex: 15px;
-    grid-area: my-nav;
+aside{
+    flex: 30px;
     background-color: bisque;
     text-align: center;
 }
 
-aside{
-    flex: 15px;
-}
-
 #m1{
     background-color: azure;
+    list-style: none;
+    padding: 0;
+    margin: auto;
 }
 
-#m1 a{
+#m1 li a{
     text-decoration: none;
-    margin-left: 200px;
+    margin-left: 150px;
     color: darkgrey;
+    padding: 20px;
+    display: block;
+}
+
+#m1 li{
+    display: inline-block;
+    text-align: center;
+}
+
+#m1 li a:hover{
+    background-color: lemonchiffon;
 }
 
 #contenido{
@@ -45,6 +54,11 @@ section{
     background-color: aliceblue;
 }
 
+#menu a{
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
 #enlace{
     background-color: aliceblue;
 }
@@ -52,10 +66,19 @@ section{
 footer{
     background-color: beige;
     grid-area: my-footer;
+    padding: 50px;
 }
 
 footer a{
     margin-left: 105px;
+}
+
+#pie{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
 }
 
 #texto{
@@ -82,26 +105,54 @@ div h3{
     padding-top: 15px;
     
 }
-
 #form2{
-    float: left;
-    padding-left: 140px;
+    width: 40px;
+}
+
+#p1 li a{
+    margin: 0px;
+}
+
+#p1{
+    position: relative;
+    left: 60px;
+    top: -100px;
+}
+
+#p2 li a{
+    margin: 0px;
+}
+
+#p2 {
+    position: relative;
+    left: 380px;
+    top: -185px;
+}
+
+#p3 li a{
+    margin: 0px;
+}
+
+#p3 {
+    position: relative;
+    left: 700px;
+    top: -270px;
+}
+
+#p4 li a{
+    margin: 0px;
+}
+
+#p4 {
+    position: relative;
+    left: 380px;
+    top: -185px;
 }
 
 #titulo{
     color: darkseagreen;
     font-size: 20px;
     text-align: center;
-}
-
-#subitulo{
-    text-align: left;
-}
-
-#foot a{
-    text-decoration: none;
-    margin-left: 140px;
-    color: cadetblue;
 }
 
 #parrafo1, #parrafo2{
@@ -111,7 +162,7 @@ div h3{
 }
 
 #img1, #img4{
-    float: left;
+    float: right;
     width: 300px;
     padding-left: 30px;
     padding-right: 15px;
@@ -120,28 +171,14 @@ div h3{
 #img2{
     font-size: 19px;
     padding-left: 150px;
+    color: darkred;
+    font-family: Cambria;
 }
 
 #img3{
     font-size: 19px;
     padding-top: 80px;
     padding-left: 150px;
-}
-
-@media (min-width:600px) and (max-width:1000px){
-    .grid{
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 150px 50px 1fr 100px;
-        grid-template-areas: "my-header my-header"
-        "my-nav" "my-section" "my-footer";
-    }
-}
-
-@media(min-width:1001px){
-    .grid{
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 200px 1fr 100px;
-        grid-template-areas: "my-header my-header"
-        "my-nav my-section" "my-footer my-footer";
-    }
+    color: darkred;
+    font-family: Cambria;
 }

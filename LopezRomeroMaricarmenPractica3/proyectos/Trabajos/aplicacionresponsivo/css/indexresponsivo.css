@@ -1,0 +1,142 @@
+body{
+    margin: 0px auto;
+}
+
+.grid{
+    display: grid;
+    font-family: 'Times New Roman';
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 100px 50px;
+    grid-template-areas: "my-header"
+    "my-nav" "my-section" "my-aside" "my-footer";
+}
+
+main{
+    font-family: arial;
+}
+
+header{
+    grid-area: my-header;
+    background-color: ghostwhite;
+}
+
+nav{
+    background-color: #8C6D86;
+    grid-area: my-nav;
+}
+
+section{
+    background-color: #bccfd0;
+    grid-area: my-section;
+}
+
+aside{
+    background-color: peachpuff;
+    grid-area: my-aside;
+}
+
+footer{
+    background-color: #604d45;
+    grid-area: my-footer;
+}
+
+h1{
+    font-family: serif;
+    font-size: 50px;
+    margin-top: 60px;
+    color: brown;
+}
+
+.seccion a{
+    margin-left: 240px;
+    text-decoration: none;
+    color: #8C6D86;
+}
+
+.seccion2 a{
+    margin-left: 300px;
+    text-decoration: none;
+    color: #604d45;
+}
+
+h2{
+    margin-left: 240px;
+    color: linen;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Georgia;
+    color: white;
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#img1, #img2, #img3{
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+}
+
+#logo{
+    float: left;
+    margin-left: 330px;
+    margin-top: 30px;
+}
+
+p{
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 240px;
+}
+
+aside p{
+    margin-left: 20px;
+}
+
+aside a{
+    text-decoration: none;
+    margin-left: 33px;
+    color: #604d45;
+}
+
+aside h3{
+    margin-left: 20px;
+    font-size: 18px;
+    color: darkgoldenrod;
+}
+
+footer p{
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media(min-width:400px){
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px 200px 1fr 100px;
+        grid-template-areas: "my-header"
+        "my-nav" "my-section" "my-aside" "my-footer";
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px){
+    .grid{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas: "my-header my-header"
+        "my-nav my-nav" "my-aside my-section" "my-footer my-footer";
+    }
+}
+
+@media(min-width:1001px){
+    .grid{
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: "my-header my-header my-header"
+        "my-nav my-section my-aside" "my-footer my-footer my-footer";
+    }
+}

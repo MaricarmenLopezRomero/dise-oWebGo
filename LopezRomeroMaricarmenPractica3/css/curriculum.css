@@ -9,25 +9,34 @@ header{
     grid-area: my-header;
 }
 
-nav{
-    flex: 15px;
-    grid-area: my-nav;
+aside{
+    flex: 30px;
     background-color: bisque;
     text-align: center;
 }
 
-aside{
-    flex: 15px;
-}
-
 #m1{
     background-color: azure;
+    list-style: none;
+    padding: 0;
+    margin: auto;
 }
 
-#m1 a{
+#m1 li a{
     text-decoration: none;
-    margin-left: 200px;
+    margin-left: 150px;
     color: darkgrey;
+    padding: 20px;
+    display: block;
+}
+
+#m1 li{
+    display: inline-block;
+    text-align: center;
+}
+
+#m1 li a:hover{
+    background-color: lemonchiffon;
 }
 
 #contenido{
@@ -52,10 +61,19 @@ section{
 footer{
     background-color: beige;
     grid-area: my-footer;
+    padding: 10px;
 }
 
 footer a{
     margin-left: 105px;
+}
+
+#pie{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
 }
 
 #texto{
@@ -86,6 +104,7 @@ div h3{
 #form2{
     float: left;
     padding-left: 140px;
+    width: 40px;
 }
 
 #titulo{
@@ -94,54 +113,9 @@ div h3{
     text-align: center;
 }
 
-#subitulo{
-    text-align: left;
-}
-
 #foot a{
     text-decoration: none;
     margin-left: 140px;
     color: cadetblue;
 }
 
-#parrafo1, #parrafo2{
-    text-align: justify;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#img1, #img4{
-    float: left;
-    width: 300px;
-    padding-left: 30px;
-    padding-right: 15px;
-}
-
-#img2{
-    font-size: 19px;
-    padding-left: 150px;
-}
-
-#img3{
-    font-size: 19px;
-    padding-top: 80px;
-    padding-left: 150px;
-}
-
-@media (min-width:600px) and (max-width:1000px){
-    .grid{
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 150px 50px 1fr 100px;
-        grid-template-areas: "my-header my-header"
-        "my-nav" "my-section" "my-footer";
-    }
-}
-
-@media(min-width:1001px){
-    .grid{
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 200px 1fr 100px;
-        grid-template-areas: "my-header my-header"
-        "my-nav my-section" "my-footer my-footer";
-    }
-}

@@ -1,0 +1,30 @@
+body{
+    background-color: antiquewhite;
+    padding-top: 100px;
+    color: crimson;
+    text-align: center;
+}
+h2{
+    color: brown;
+}
+
+#registro{
+    background-color: azure;
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    left: 450px;
+    top: 150px;
+    padding-bottom: 10px;
+}
+
+#boton1{
+    background-color: cadetblue;
+    font-family: verdana; 
+}
+
+#boton2{
+    background-color: lightcoral;
+    font-family: verdana;
+    color: cornsilk;
+}

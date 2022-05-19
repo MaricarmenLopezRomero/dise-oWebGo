@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Cinematográfica</title>
+    <link rel="stylesheet" href="css/formulariov2.css">
+    <link rel="icon" href="img/icon_6befbc035f03768e9a6e28c145529b99.ico">
+</head>
+<body>   
+    <div id="Contenedor">
+        <img id="imagen" src="img/Imagen1.png" alt="logo">
+        <h2 style="text-align:center">Encuesta de cine: Nominadas al Oscar 2022</h2>
+        <form id="formulario1" name="formulario1" method="post" action="data.php"> 
+            <fieldset id="datos_personales">
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label> &nbsp&nbsp
+                <input type="text" name="nombre" id="nombre" size="30">
+                <br />
+                <br />
+                <label for="apellido">Apellido</label> &nbsp
+                <input type="text" name="apellido" id="apellido" size="30"> 
+                <br />
+                <br />
+                <label for="dni">DNI</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="text" name="dni" id="dni" maxlength="9" size="30"> 
+                <br />
+                <br />
+                <label for="edad">Edad</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="text" name="edad" id="edad" size="30" maxlength="2">
+                <br />
+                <br />
+                <label for="sexo">Sexo</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                <select name="valores" id="opciones">
+                    <option value=""></option>
+                    <option value="opcion1">Feminino</option>
+                    <option value="opcion2">Masculino</option>
+                </select>
+            </fieldset>
+            <fieldset id="mejor_pelicula">
+                <legend>Mejor Película</legend>
+                <input type="radio" name="pelicula" value="11"> CODA <br>
+                <input type="radio" name="pelicula" value="12"> El callejón de las almas perdidas <br>
+                <input type="radio" name="pelicula" value="13"> Don't look up <br>
+                <input type="radio" name="pelicula" value="14"> Duna <br>
+                <input type="radio" name="pelicula" value="15"> Drive My Car <br>
+                <input type="radio" name="pelicula" value="16"> Belfast <br>
+                <input type="radio" name="pelicula" value="17"> Licorice Pizza <br>
+                <input type="radio" name="pelicula" value="18"> El poder del perro <br>
+                <input type="radio" name="pelicula" value="19"> Amor sin barreras <br>
+                <input type="radio" name="pelicula" value="20"> Rey Richard: Una familia ganadora <br>
+            </fieldset>
+            <fieldset id="peliculas_no_vistas">
+                <legend>Selecciona las películas que no hayas visto</legend>
+                <input type="checkbox" name="pelicula" value="21"> Spider Man: No way home <br>
+                <input type="checkbox" name="pelicula" value="22"> The Batman <br>
+                <input type="checkbox" name="pelicula" value="23"> Uncharted <br>
+                <input type="checkbox" name="pelicula" value="24"> Spencer <br>
+                <input type="checkbox" name="pelicula" value="25"> Doctor Strange in the Multiverse of Madness <br>
+            </fieldset>
+            <fieldset id="grupo_argumento">
+                <legend>Argumento de tu película preferida</legend>
+                <textarea id="argumento" name="argumento" cols="50" rows="14"></textarea>
+            </fieldset>
+            <br>
+            <input id="boton" type="reset" value="Borrar Formulario"> <input id="boton" type="submit" value="Enviar">
+        </form>
+    </div> 
+</body>
+</html>

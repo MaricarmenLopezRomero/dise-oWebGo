@@ -1,0 +1,36 @@
+h1{
+    color: brown;
+}
+
+#tabla{
+    border-color: darkred;
+    position: fixed;
+    right: 270px;
+}
+
+#form{
+    background-color: gold;
+    color: midnightblue;
+}
+
+#form2{
+    background-color: yellow;
+    color: crimson;
+}
+
+#form3{
+    background-color: darkorange;
+    color: lightcyan;
+}
+
+#imagen{
+    padding-top: 20px;
+    position: fixed;
+    top: 400px;
+    left: 270px;
+    padding-bottom: 20px;
+}
+
+body{
+    text-align: center;
+}
