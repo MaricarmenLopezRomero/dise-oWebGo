@@ -15,19 +15,20 @@ body{
     text-decoration: none;
     color: chocolate;
 }
-#contenido{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .aside{
     flex: 30px;
     background-color: bisque;
     text-align: center;
     grid-area: my-aside;
 }
-
-.nav_aside{
+.nav{
     grid-area: my-nav;
+}
+
+#contenido{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #m1{
@@ -60,12 +61,11 @@ body{
     grid-area: my-section;
 }
 
-#menu, #menu a, #enlaces_curriculum, #enlaces_curriculum a{
+#menu, #menu a, #enlace, #enlace a{
     background-color: aliceblue;
     text-decoration: none;
     color: darkgoldenrod;
 }
-
 
 .pie_pagina{
     background-color: beige;
@@ -129,38 +129,55 @@ div h2{
     padding-right: 30px;
 }
 
-.section_contenido h2{
-    color: darkslategray;
-    font-size: 18px;
+#titulo{
+    color: darkseagreen;
+    font-size: 20px;
+    text-align: center;
 }
 
-.section_contenido{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.section_contenido p{
-    text-align: justify;
-}
 
 li {
     list-style-type: circle;
 }
 
-strong, th, b{
-    color: indianred;
+.section_contenido .parte3 img{
+    width: 300px;
 }
 
-td,th{
-    border: 1px solid;
-    border-color: blue;
+.section_contenido .parte3 {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
+    padding-left: 80px;
+}
+
+.section_contenido .parte3 a{
+    margin-left: 10px;
+    color: aliceblue;
+    background-color: lightsteelblue;
     text-align: center;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    padding: 0px 30px;
+    margin-left: 100px;
+}
+
+.section_contenido .parte3 h2{
+    color: lightcoral;
+    font-family: verdana;
+    font-size: 16px;
+    margin-left: 100px;
 }
 
 @media screen and (max-width:599px) {
     .grid{
         grid-template-columns: 100%;
-        grid-template-rows: 100px 25px 1fr 100px 50px;
+        grid-template-rows: 100px 50px 1fr 50px 50px;
         grid-template-areas: "my-header"
         "my-nav" "my-section" "my-aside" "my-footer";
     }
@@ -170,8 +187,12 @@ td,th{
         grid-gap: 30px;
         padding: 35px 0px;
     }
-    .section .section_contenido{
-        width: 70%;
+
+    .section_contenido .parte3{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
     }
 }
 
@@ -185,6 +206,12 @@ td,th{
     .pie_pagina .parte1{
         width: 90%;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    .section_contenido .parte3{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
     }

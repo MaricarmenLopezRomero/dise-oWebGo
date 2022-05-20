@@ -15,10 +15,7 @@ body{
     text-decoration: none;
     color: chocolate;
 }
-#contenido{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .aside{
     flex: 30px;
     background-color: bisque;
@@ -26,7 +23,7 @@ body{
     grid-area: my-aside;
 }
 
-.nav_aside{
+.nav{
     grid-area: my-nav;
 }
 
@@ -54,18 +51,23 @@ body{
     background-color: lemonchiffon;
 }
 
+#contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .section{
     flex: 70%;
     background-color: gainsboro;
     grid-area: my-section;
+    padding: 60px;
 }
 
-#menu, #menu a, #enlaces_curriculum, #enlaces_curriculum a{
+#menu, #menu a, #enlace, #enlace a{
     background-color: aliceblue;
     text-decoration: none;
     color: darkgoldenrod;
 }
-
 
 .pie_pagina{
     background-color: beige;
@@ -129,49 +131,68 @@ div h2{
     padding-right: 30px;
 }
 
-.section_contenido h2{
-    color: darkslategray;
-    font-size: 18px;
-}
-
-.section_contenido{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.section_contenido p{
-    text-align: justify;
-}
-
 li {
     list-style-type: circle;
 }
 
-strong, th, b{
-    color: indianred;
+.section_contenido {
+    width: 400px;
+    height: 300px;
+    background-color: blanchedalmond;
+    margin: auto;
+    padding: 20px 30px;
+    color: slategrey;
 }
 
-td,th{
-    border: 1px solid;
-    border-color: blue;
+.section_contenido h2{
+    margin: 0;
     text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
 }
+
+.section_contenido .field input{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 20px;
+}
+
+.section_contenido .field3{
+    border-bottom: 1px solid;
+    margin-bottom: 15px;
+}
+
+.section_contenido .field3 a{
+    text-decoration: none;
+    color: grey;
+}
+
+.section_contenido .field3  input, .field2 input{
+    width: 90px;
+    height: 30px;
+    background-color: khaki;
+    border-radius: 5px;
+    border: none;
+    color: brown;
+}
+
 
 @media screen and (max-width:599px) {
     .grid{
         grid-template-columns: 100%;
-        grid-template-rows: 100px 25px 1fr 100px 50px;
+        grid-template-rows: 100px 25px 1fr 50px;
         grid-template-areas: "my-header"
         "my-nav" "my-section" "my-aside" "my-footer";
     }
-    .pie_pagina .parte1{
+    .pie_pagina .parte1, .section_contenido .parte3{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
     }
     .section .section_contenido{
-        width: 70%;
+        width: 90%;
     }
 }
 

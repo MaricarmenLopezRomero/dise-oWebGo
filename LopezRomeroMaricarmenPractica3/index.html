@@ -9,22 +9,24 @@
 </head>
 <body>
     <main class="grid">
-        <header>
+        <header class="cabecera">
             <img id="form" src="img/fotoPersonal.jfif" alt="imagen">   
-            <div id="texto">
+            <div class="texto">
                 <h1>Maricarmen López Romero</h1>
                 <h2>Mi Web personal</h2>
-                <h3 href="sesion.html">Iniciar Sesión</h3>
+                <a class="inicio" href="sesion.html">Iniciar Sesión</a>
             </div>
         </header>
+        <nav class="nav_menu">
+            <div id="m1">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </div>
+        </nav>
         <div id="contenido">
-            <section>
-                <div id="m1">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="curriculum.html">Curriculum</a></li>
-                    <li><a href="proyecto.html">Proyecto</a></li>
-                    <li><a href="contactos.html">Contacto</a></li>
-                </div>
+            <section class="section_contenido">
                 <div>
                     <h2 id="titulo">NOTICIAS</h2>
                     <h5 id="img2">Alexa Amazon</h5>
@@ -43,7 +45,7 @@
                     </p>
                 </div>
             </section>
-            <aside>
+            <aside class="aside">
                 <h4>Menu</h4>
                     <div id="menu">
                         <a href="index.html">Inicio</a> <br>
@@ -60,30 +62,44 @@
                     </div>
             </aside>
         </div>
-        <footer>
-            <img id="form2" src="img/fotoPersonal.jfif" alt="img2">
-            <div id="p1">
-                <p>Información del contacto</p>
-                <li><a>Estudiante de pregrado</a></li>
-                <li><a>Ingenieria de Ssitemas y Computación</a></li>
+        <footer class="pie_pagina">
+            <div class="parte1">
+                <div class="box">
+                    <figure>
+                        <img src="img/fotoPersonal.jfif" alt="img2">
+                    </figure>
+                </div>
+                <div class="box">
+                    <p>Información del contacto:</p>
+                    <li><a>Celular: 986345186</a></li>
+                    <li><a>Correo: domino@gmail.com</a></li>
+                </div>
+                <div class="box">
+                    <p>Siguenos en:</p>
+                    <li><a href="https://www.instagram.com/" >Instagram</a></li>
+                    <li><a href="https://twitter.com/?lang=es">Twitter</a></li>
+                    <li><a href="https://es-la.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.snapchat.com/en-GB">Snapchat</a></li>
+                </div>
+                <div class="box">
+                    <p>Enlaces de interes</p>
+                    <li><a href="http://www.usat.edu.pe/">Enlace 01</a></li>
+                    <li><a href="https://www.youtube.com/">Enlace 02</a></li>
+                    <li><a href="https://www.now.com.pe/">Enlace 03</a></li>
+                    <li><a href="https://deukelele.com/acordes-de-ukelele/">Enlace 04</a></li>
+                </div>
+                <div class="box">
+                    <p>Menú</p>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="proyecto.html">Proyectos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </div>
             </div>
-            <div id="p2">
-                <p>Siguenos en:</p>
-                <li><a>Estudiante de pregrado</a></li>
-                <li><a>Ingenieria de Ssitemas y Computación</a></li>
-            </div>
-            <div id="p3">
-                <p>Enlaces de interes</p>
-                <li><a>Estudiante de pregrado</a></li>
-                <li><a>Ingenieria de Ssitemas y Computación</a></li>
-            </div>
-            <div id="p4">
-                <p>Menú</p>
-                <li><a>Estudiante de pregrado</a></li>
-                <li><a>Ingenieria de Ssitemas y Computación</a></li>
+            <div class="parte2">
+                <p>WebMaster: Maricarmen López Romero</p>
             </div>
         </footer>
-        <p id="pie">WebMaster: Maricarmen López Romero</p>
     </main>
 </body>
 </html>

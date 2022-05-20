@@ -9,58 +9,144 @@
 </head>
 <body>
     <main class="grid">
-        <header>
+        <header class="cabecera">
             <img id="form" src="img/fotoPersonal.jfif" alt="imagen">   
-            <div id="texto">
+            <div class="texto">
                 <h1>Maricarmen López Romero</h1>
                 <h2>Mi Web personal</h2>
-                <h3>Iniciar Sesión</h3>
+                <a class="inicio" href="sesion.html">Iniciar Sesión</a>
             </div>
         </header>
+        <nav class="nav_menu">
+            <div id="m1">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </div>
+        </nav>
         <div id="contenido">
-            <section>
-                <div id="m1">
-                    <li><a href="Inicio">Inicio</a></li>
-                    <li><a href="Curriculum">Curriculum</a></li>
-                    <li><a href="Proyecto">Proyecto</a></li>
-                    <li><a href="Contacto">Contacto</a></li>
-                </div>
-                <div>
-                    <h2 id="titulo">NOTICIAS</h2>
+            <section class="section">
+                <div class="section_contenido">
+                    <h2 id="perfil">Perfil</h2>
+                    <p>
+                        Estudiante del 5º ciclo de la carrera de <i><b>Ingenieria de Sistemas y Computación en la Universidad Santo Toribio de Mogrovejo Chiclayo.</b></i>
+                        Presento gran capacidad de trabajar en equipo, habilidad para dirigir proyectos y aprender idiomas facilmente. Asimismo, con ganas de 
+                        poner en práctica los conocimientos obtenidos en la carrera y seguir aprendiendo en un entorno dinámico.
+                    </p>
+                    <h2 id="experiencia">Experiencia Profesional</h2>
+                    <table class="table1">
+                        <thead>
+                            <tr>
+                                <th>Empresa/Organización</th>
+                                <th>Cargo</th>
+                                <th>Localización</th>
+                                <th>Desde-Hasta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>USAT</td>
+                                <td>Estudiante de pregrado</td>
+                                <td>Chiclayo</td>
+                                <td>2020-actualidad</td>
+                            </tr>
+                            <tr>
+                                <td>USMP</td>
+                                <td>Estudiante de idiomas</td>
+                                <td>Lima</td>
+                                <td>Actualidad</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 id="habilidades">Habilidades y Conocimientos</h2>
+                    <ul>
+                        <li><strong>Idiomas:</strong>&nbsp Castellano (idioma nativo); Ingles (avanzado), Italiano (B2)</li>
+                        <li><strong>Programación:</strong>&nbsp JavaScript, HTML5, postgreSQL</li>
+                        <li><strong>Experiencia:</strong>&nbsp Practicante en CAT</li>
+                    </ul>
+                    <h2 id="cursos">Otros cursos</h2>
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Ciclo</th>
+                                <th>Tipo</th>
+                                <th>Año</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diseño Web</td>
+                                <td>5º Ciclo</td>
+                                <td>Obligatorio</td>
+                                <td>2022</td>
+                            </tr>
+                            <tr>
+                                <td>Ingenieria de Procesos</td>
+                                <td>5º Ciclo</td>
+                                <td>Obligatorio</td>
+                                <td>2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
-            <aside>
+            <aside class="aside">
                 <h4>Menu</h4>
                     <div id="menu">
-                        <a>Inicio</a> <br>
-                        <a>Curriculum</a> <br>
-                        <a>Proyectos</a> <br>
-                        <a>Contactos</a>
+                        <a href="index.html">Inicio</a> <br>
+                        <a href="curriculum.html">Curriculum</a> <br>
+                        <a href="proyecto.html">Proyectos</a> <br>
+                        <a href="contactos.html">Contactos</a>
                     </div>
-                <h4>Enlaces</h4>
-                    <div id="enlace">
-                        <a href="enlace1">Enlace 01</a> <br>
-                        <a href="enlace2">Enlace 02</a> <br>
-                        <a href="enlace3">Enlace 03</a> <br>
-                        <a href="enlace4">Enlace 04</a> <br>
+                <h4>Curriculum</h4>
+                    <div id="enlaces_curriculum">
+                        <a href="#perfil">Perfil</a> <br>
+                        <a href="#experiencia">Experiencia</a> <br>
+                        <a href="#habilidades">Habilidades</a> <br>
+                        <a href="#cursos">Otros cursos</a> <br>
                     </div>
             </aside>
         </div>
-        <footer>
-            <img id="form2" src="img/fotoPersonal.jfif" alt="img2">
-            <a>Información de contacto</a>
-            <a>Síguenos en</a>
-            <a>Enlaces de interés</a>
-            <a>Menu</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <a>Mapa</a>
-            <div id="foot">
-                <a href="email">@dominio.gmail</a>
-                <a href="instagram">Instagram</a>
-                <a href="enlace">Enlace</a>
-                <a href="menu">Menu</a>
-                <a href="guia">Guia</a>
+        <footer class="pie_pagina">
+            <div class="parte1">
+                <div class="box">
+                    <figure>
+                        <img src="img/fotoPersonal.jfif" alt="img2">
+                    </figure>
+                </div>
+                <div class="box">
+                    <p>Información del contacto:</p>
+                    <li><a>Celular: 986345186</a></li>
+                    <li><a>Correo: domino@gmail.com</a></li>
+                </div>
+                <div class="box">
+                    <p>Siguenos en:</p>
+                    <li><a href="https://www.instagram.com/" >Instagram</a></li>
+                    <li><a href="https://twitter.com/?lang=es">Twitter</a></li>
+                    <li><a href="https://es-la.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.snapchat.com/en-GB">Snapchat</a></li>
+                </div>
+                <div class="box">
+                    <p>Enlaces de interes</p>
+                    <li><a href="http://www.usat.edu.pe/">Enlace 01</a></li>
+                    <li><a href="https://www.youtube.com/">Enlace 02</a></li>
+                    <li><a href="https://www.now.com.pe/">Enlace 03</a></li>
+                    <li><a href="https://deukelele.com/acordes-de-ukelele/">Enlace 04</a></li>
+                </div>
+                <div class="box">
+                    <p>Menú</p>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="proyecto.html">Proyectos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </div>
+            </div>
+            <div class="parte2">
+                <p>WebMaster: Maricarmen López Romero</p>
+            </div>
         </footer>
-        <p id="pie">WebMaster: Maricarme López Romero</p>
     </main>
 </body>
 </html>

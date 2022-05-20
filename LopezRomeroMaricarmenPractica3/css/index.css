@@ -1,18 +1,30 @@
 body{
     margin: 0px auto;
+    font-family: Cambria;
 }
 
-header{
-    padding-bottom: 80px;
+.cabecera{
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Times New Roman';
     background-color: antiquewhite;
     grid-area: my-header;
 }
 
-aside{
+.cabecera a{
+    text-decoration: none;
+    color: chocolate;
+}
+
+.aside{
     flex: 30px;
     background-color: bisque;
     text-align: center;
+    grid-area: my-aside;
+}
+
+.nav_menu{
+    grid-area: my-nav;
 }
 
 #m1{
@@ -44,46 +56,64 @@ aside{
     flex-wrap: wrap;
 }
 
-section{
+.section_contenido{
     flex: 70%;
     background-color: gainsboro;
     grid-area: my-section;
 }
 
-#menu{
+#menu, #menu a, #enlace, #enlace a{
     background-color: aliceblue;
-}
-
-#menu a{
     text-decoration: none;
     color: darkgoldenrod;
 }
 
-#enlace{
-    background-color: aliceblue;
-}
-
-footer{
+.pie_pagina{
     background-color: beige;
+    width: 100%;
     grid-area: my-footer;
-    padding: 50px;
 }
 
-footer a{
-    margin-left: 105px;
+.pie_pagina .parte1{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
 }
 
-#pie{
+.pie_pagina .parte1 .box p{
+    color: grey;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.pie_pagina .parte1 .box a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: darkgrey;
+}
+
+.pie_pagina .parte1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pie_pagina .parte1 .box figure img{
+    width: 70px;
+}
+
+.pie_pagina .parte2{
     background-color: black;
     color: white;
     text-align: center;
-    margin: 0px;
-    padding: 10px;
-}
-
-#texto{
-    margin-left: 180px;
-    margin-top: -120px;
+    padding: 5px;
 }
 
 div h1{
@@ -93,60 +123,11 @@ div h2{
     color: chocolate;
 }
 
-div h3{
-    margin-top: -120px;
-    text-align: right;
-    margin-right: 20px;
-}
-
 #form{
-    height: 100px;
+    height: 150px;
+    float: left;
     padding-left: 50px;
-    padding-top: 15px;
-    
-}
-#form2{
-    width: 40px;
-}
-
-#p1 li a{
-    margin: 0px;
-}
-
-#p1{
-    position: relative;
-    left: 60px;
-    top: -100px;
-}
-
-#p2 li a{
-    margin: 0px;
-}
-
-#p2 {
-    position: relative;
-    left: 380px;
-    top: -185px;
-}
-
-#p3 li a{
-    margin: 0px;
-}
-
-#p3 {
-    position: relative;
-    left: 700px;
-    top: -270px;
-}
-
-#p4 li a{
-    margin: 0px;
-}
-
-#p4 {
-    position: relative;
-    left: 380px;
-    top: -185px;
+    padding-right: 30px;
 }
 
 #titulo{
@@ -181,4 +162,47 @@ div h3{
     padding-left: 150px;
     color: darkred;
     font-family: Cambria;
+}
+
+li {
+    list-style-type: circle;
+}
+
+@media screen and (max-width:599px) {
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 25px 1fr 50px;
+        grid-template-areas: "my-header"
+        "my-nav" "my-section" "my-aside" "my-footer";
+    }
+    .pie_pagina .parte1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px){
+    .grid{
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas: "my-header"
+        "my-nav my-nav" "my-section my-aside" "my-footer my-footer";
+    }
+    .pie_pagina .parte1{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media(min-width:1001px){
+    .grid{
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: 200px 150px 1fr 100px;
+        grid-template-areas: "my-header my-header"
+        "my-nav my-nav" "my-section my-aside" "my-footer my-footer";
+    }
 }
