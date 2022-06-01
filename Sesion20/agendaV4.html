@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agendaV4.css">
+    <title>AgendaV4</title>
+</head>
+<body onload="actualizarDatos()">
+    <div id="contenedor">
+        <header>
+            <h3>Mi Agenda de contactos</h3>
+            <hr>
+        </header>
+        <form id="form">
+            <span>Nombre:</span>
+            <input type="text" placeholder="Nombre" name="nombre" id="nombre"> <br><br>
+            <span>Num Celular: </span>
+            <input type="text" placeholder="Celular" name="movil" id="movil"> <br><br>
+            <span>email: </span>
+            <input type="text" placeholder="email" name="email" id="email"> <br><br>
+            <span>Dirección: </span>
+            <input type="text" placeholder="Dirección" name="direccion" id="direccion"> <br><br>
+            <span>Sexo: </span>
+            <select name="valores" id="sexo">
+                <option value=""></option>
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
+            </select>
+        </form>
+        <hr />
+        <div>
+            <button type="button" onclick="guardarDato()">Guardar</button>
+            <button type="button" onclick="recuperarDato()">Recuperar</button>
+            <button type="button" onclick="eliminarDatos()">Eliminar</button>
+            <button type="button" onclick="eliminarTodo()">Eliminar Todos</button>
+            <button type="reset" onclick="limpiarDatos()">Limpiar datos</button>
+        </div>
+        <hr>
+        <span class="titu">Nombre</span> <span class="titu">Celular</span> <span class="titu">email</span> <span class="titu">Direccion</span> <span class="titu">Sexo</span> <br>
+        <ul id="contactos"></ul>
+    </div>
+    <script type="text/javascript" src="js/agendaV4.js"></script>
+</body>
+</html>
