@@ -8,118 +8,200 @@
     <title>Carrito de Compra</title>
 </head>
 <body>
-    <header>
-       <div class="header-section">
-            <img id="logo" src="img/logo.png" alt="logo">
-            <div>
-                <img onmouseover="showCart(this)" id="cart" src="img/carrito.png" alt="carrito">
-                <p class="num_producto">0</p>
-            </div>
-            <div class="productos" id="productos_id">
-                <!-- <p class="boton" onclick="closeBtn()">X</p>
-                <h3>Mi carrito</h3>
-                <div class="items_card"> -->
-                    <!-- <div class="item">
-                        <img src="img/img1.jpg" alt="producto2">
-                        <div class="content">
-                            <h5>nombre del producto</h5>
-                            <h5 class="precio">s/. 45.50</h5>
-                            <h6>Amount: 3</h6>
-                        </div>
-                        <span>X</span>
-                    </div>
-                    <div class="item">
-                        <img src="img/img1.jpg" alt="producto2">
-                        <div class="content">
-                            <h5>nombre del producto</h5>
-                            <h5 class="precio">s/. 45.50</h5>
-                            <h6>Amount: 3</h6>
-                        </div>
-                        <span>X</span>
-                    </div> -->
-                    <!-- <h2>Total: s/<strong class="total">0</strong></h2> -->
+    <main class="grid">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                     <div class="row columns">
+                         <img id="logo" src="img/logo.png" alt="logo">
+                     </div>
+                     <div class="two columns u-pull-right">
+                         <ul>
+                             <li class="submenu">
+                                 <img src="img/carrito.png" alt="carrito" id="img_carrito">
+                                 <div id="carrito">
+                                     <table id="lista_carrito" class="u-full-width">
+                                         <thead>
+                                             <tr>
+                                                 <th>Imagen</th>
+                                                 <th>Nombre</th>
+                                                 <th>Precio</th>
+                                                 <th>Cantidad</th>
+                                                 <th></th>
+                                             </tr>
+                                         </thead>
+                                     </table>
+                                         <a href="#" id="vaciar_carrito" class="button u-full-width">Vaciar Carrito</a>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
                 </div>
             </div>
-       </div>
-    </header>
-    <section class="container">
-        <div class="productos">
-            <div class="carts">
-                <div>
-                    <img src="img/img1.jpg" alt="producto1">
-                    <p>s/<span>18,999.00</span></p>
-                </div>
-                <p class="titulo">MacBook Pro de 16 pulgadas</p>
-                <a href="" data-id="1" class="btn-add-cart">añadir al carrito</a>
+            <div id="hero">
+                 <div class="container">
+                     <div class="row">
+                         <div class="six columns">
+                             <div class="contenido-hero">
+                                 <h2>Vega Corporación</h2>
+                                 <form action="#" id="busqueda" method="post" class="formulario">
+                                     <input class="u-full-width" type="text" placeholder="Buscar" id="buscador">
+                                     <input type="submit" id="submit_buscador" class="submit_buscador">
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
             </div>
-            <div class="carts">
-                <div>
-                    <img src="img/img2.jpg" alt="producto2">
-                    <p>s/<span>9,999.00</span></p>
-                </div>
-                <p class="titulo">Apple MacBook Pro 14 inch Chip M1 Pro 16GB 512GB SSD Space Gray</p>
-                <a href="" data-id="2" class="btn-add-cart">añadir al carrito</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="img/img3.jpg" alt="producto3">
-                    <p>s/<span>2,799.00</span></p>
-                </div>
-                <p class="titulo">Laptop Gamer Lenovo Ideapad Gaming 3i 15.6" FHD i5-11300H 8GB RAM 256GB SSD NVIDIA GeForce GTX 1650</p>
-                <a href="" data-id="3" class="btn-add-cart">añadir al carrito</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="img/img4.jfif" alt="producto4">
-                    <p>s/<span>3,349.00</span></p>
-                </div>
-                <p class="titulo">Laptop Lenovo V15-IIL Intel Core i7-1065G7 8GB 1TB FreeDos</p>
-                <a href="" data-id="4" class="btn-add-cart">añadir al carrito</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="img/img5.jpg" alt="producto5">
-                    <p>s/<span>749.00</span></p>
-                </div>
-                <p class="titulo">Lenovo Notebook 10.1 IdeaPad D330 Intel Celeron N4020</p>
-                <a href="" data-id="5" class="btn-add-cart">añadir al carrito</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="img/img6.jpg" alt="producto6">
-                    <p>s/<span>1,599.00</span></p>
-                </div>
-                <p class="titulo">Laptop HP 15-DW1085LA 15.6 Intel Core i3 10°Gen 256GB SSD 4GB</p>
-                <a href="" data-id="6" class="btn-add-cart">añadir al carrito</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="img/img7.jpg" alt="producto7">
-                    <p>s/<span>2,899.00</span></p>
-                </div>
-                <p class="titulo">Laptop HP 15-EF2000 15.6' FHD R7 5700U 12GB 512GB SSD</p>
-                <a href="" data-id="7" class="btn-add-cart">añadir al carrito</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="img/img8.jpg" alt="producto8">
-                    <p>s/<span>1,655.00</span></p>
-                </div>
-                <p class="titulo">Lenovo V15 AMD Ryzen 3 3250U 8GB 1TB HDD 15.6"HD</p>
-                <a href="" data-id="8" class="btn-add-cart">añadir al carrito</a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <h6>Realizado por <span>Maricarmen López Romero</span></h6>
-    </footer>
-    <script>
-        function showCart(x) {
-            document.getElementById("productos_id").style.display = "block";
-        }
-        function closeBtn() {
-            document.getElementById("productos_id").style.display ="none";
-        }
-    </script>
+         </header>
+         <nav class="nav">
+             <div class="barra">
+                 <div class="container">
+                     <div class="row_2">
+                         <div class="four columns icono icono1">
+                             <p>Laptops <br>
+                                 Apple, Lenovo, HP
+                             </p>
+                         </div>
+                         <div class="four columns icono icono2">
+                             <p>Recomendaciones <br>
+                                 Expertos en tecnología
+                             </p>
+                         </div>
+                         <div class="four columns icono icono3">
+                             <p>Garantía autorizada <br>
+                                 Conoce más aqui
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </nav>
+         <section id="lista_productos" class="container">
+             <h1 class="encabezado">Laptos</h1>
+             <div class="row_1">
+                 <div class="four_columns">
+                     <div class="card">
+                         <img src="img/img1.jpg" alt="producto1" class="imagen">
+                         <div class="info">
+                             <h4>MacBook Pro de 16 pulgadas</h4>
+                             <p>Descripcion</p>
+                             <img src="img/estrellas.png" alt="puntuacion">
+                             <p class="precio">s/22,999.00 <span class="u-pull-right">s/18,999.00</span></p>
+                             <a href="#" class="agregar u-full-width" data-id="1">Agregar al carrito</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="four_columns">
+                     <div class="card">
+                         <img src="img/img2.jpg" alt="producto2" class="imagen">
+                         <div class="info">
+                             <h4>Apple MacBook Pro 14 inch Chip M1 Pro 16GB 512GB SSD Space Gray</h4>
+                             <p>Descripcion</p>
+                             <img src="img/estrellas.png" alt="puntuacion">
+                             <p class="precio">s/12,999.00 <span class="u-pull-right">s/9,999.00</span></p>
+                             <a href="#" class="u-full-width" data-id="2">Agregar al carrito</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="four columns">
+                     <div class="card">
+                         <img src="img/img3.jpg" alt="producto3" class="imagen">
+                         <div class="info">
+                             <h4>Laptop Gamer Lenovo Ideapad Gaming 3i 15.6" FHD i5-11300H 8GB RAM 256GB SSD NVIDIA GeForce GTX 1650</h4>
+                             <p>Descripcion</p>
+                             <img src="img/estrellas.png" alt="puntuacion">
+                             <p class="precio">s/2,999.00 <span class="u-pull-right">s/2,979.00</span></p>
+                             <a href="#" class="u-full-width" data-id="3">Agregar al carrito</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="four_columns">
+                     <div class="card">
+                         <img src="img/img4.jfif" alt="producto4" class="imagen">
+                         <div class="info">
+                             <h4>Laptop Lenovo V15-IIL Intel Core i7-1065G7 8GB 1TB FreeDos</h4>
+                             <p>Descripcion</p>
+                             <img src="img/estrellas.png" alt="puntuacion">
+                             <p class="precio">s/3,499.00 <span class="u-pull-right">s/3,349.00</span></p>
+                             <a href="#" class="u-full-width" data-id="4">Agregar al carrito</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="four_columns">
+                     <div class="card">
+                         <img src="img/img5.jpg" alt="producto5" class="imagen">
+                         <div class="info">
+                             <h4>Lenovo Notebook 10.1 IdeaPad D330 Intel Celeron N4020</h4>
+                             <p>Descripcion</p>
+                             <img src="img/estrellas.png" alt="puntuacion">
+                             <p class="precio">s/799.00 <span class="u-pull-right">s/749.00</span></p>
+                             <a href="#" class="u-full-width" data-id="5">Agregar al carrito</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="four_columns">
+                     <div class="card">
+                         <img src="img/img6.jpg" alt="producto6" class="imagen">
+                         <div class="info">
+                             <h4>Laptop HP 15-DW1085LA 15.6 Intel Core i3 10°Gen 256GB SSD 4GB</h4>
+                             <p>Descripcion</p>
+                             <img src="img/estrellas.png" alt="puntuacion">
+                             <p class="precio">s/1,699.00 <span class="u-pull-right">s/1,599.00</span></p>
+                             <a href="#" class="u-full-width" data-id="6">Agregar al carrito</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="four_columns">
+                     <div class="card">
+                         <img src="img/img7.jpg" alt="producto7" class="imagen">
+                         <div class="info">
+                             <h4>Laptop HP 15-EF2000 15.6' FHD R7 5700U 12GB 512GB SSD</h4>
+                             <p>Descripcion</p>
+                             <img src="img/estrellas.png" alt="puntuacion">
+                             <p class="precio">s/2,999.00 <span class="u-pull-right">s/2,899.00</span></p>
+                             <a href="#" class="u-full-width" data-id="7">Agregar al carrito</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="four_columns">
+                     <div class="card">
+                         <img src="img/img8.jpg" alt="producto8" class="imagen">
+                         <div class="info">
+                             <h4>Lenovo V15 AMD Ryzen 3 3250U 8GB 1TB HDD 15.6"HD</h4>
+                             <p>Descripcion</p>
+                             <img src="img/estrellas.png" alt="puntuacion">
+                             <p class="precio">s/1,789.00 <span class="u-pull-right">s/1,655.00</span></p>
+                             <a href="#" class="u-full-width" data-id="8">Agregar al carrito</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         <footer class="footer">
+             <div class="container">
+                 <div class="row_3">
+                     <div class="four_columns">
+                         <div class="enlaces">
+                             <a class="enlace" href="#">Contacto</a>
+                             <a class="enlace" href="#">Ubicacion</a>
+                             <a class="enlace" href="#">Redes Sociales</a>
+                             <a class="enlace" href="#">¿Quienes somos?</a>
+                             <a class="enlace" href="#">Soporte</a>
+                         </div>
+                     </div>
+                     <div class="four_columns">
+                         <div class="enlaces">
+                             <a class="enlace" href="#">Empresa</a>
+                             <a class="enlace" href="#">Horarios</a>
+                             <a class="enlace" href="#">Maps</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <h6>Realizado por <span>Maricarmen López Romero</span></h6>
+         </footer>
+    </main>
+    <script src="js/carrito.js"></script>
 </body>
 </html>
