@@ -5,7 +5,7 @@ div{
     position: absolute;
     border-radius: 2rem 2rem 0 0;
     animation-name: animar;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
@@ -16,75 +16,59 @@ div{
         left: 8rem;
     }
 
-    5%{
+    8%{
         left: 8rem;
         top: 4rem;
     }
 
-    10%{
+    16%{
         top:25rem;
     }
 
-    15%{
+    24%{
         left:8rem;
     }
 
-    20%{
+    32%{
         top: 25rem;
         left: 4rem;
     }
 
-    25%{
+    40%{
         top: 27rem;
         left:4rem;
     }
-    30%{
+    48%{
         top: 27rem;
         left: 27rem;        
     }
-    35%{
+    56%{
         top: 25rem;
         left: 27rem;
     }
 
-    40%{
+    64%{
         left: 26rem;
     }
-    45%{
+    72%{
         top: 21rem;
         left: 27rem;
     }
-    50%{
+    80%{
         top: 19rem;
         left: 27rem;
     }
 
-    55%{
+    88%{
         left: 23rem;
         top: 19rem;
     }
-    60%{
+    96%{
         top: 4rem;
+        left: 23rem;
     }
-    
+    100%{
+        top: 4rem;
+        left: 8rem;
+    }
 }
-
-/* 10%{
-    left: 5rem;
-    top: 0rem;
-    color: #9b59b6;
-}
-30%{
-    top: 5rem;
-    left: 5rem;
-    color: white;
-}
-60%{
-    top: 5rem;
-    left: 0;
-    color: #9b59b6;
-}
-100%{
-    top: -100;
-    left: -200;
-} */

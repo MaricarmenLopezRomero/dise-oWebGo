@@ -1,0 +1,10 @@
+
+.banda{
+    position: absolute;
+    width: 170%;
+    height: 15%;
+    background-color: black;
+    top: 35%;
+    left: -10px;
+    z-index: 1;
+}
